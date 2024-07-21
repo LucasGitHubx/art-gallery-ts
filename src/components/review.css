@@ -1,0 +1,26 @@
+.review {
+  padding: 1rem;
+  width: 250px;
+  min-height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.1rem;
+}
+.review img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.review .personal-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.review p.date {
+  font-weight: 200;
+  font-style: italic;
+}
