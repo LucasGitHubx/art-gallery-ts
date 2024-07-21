@@ -1,0 +1,93 @@
+:root {
+  --tea-green: #def6ca;
+  --pink: #f8bdc4;
+  --plum-web: #f497da;
+  --pink: #f679e5;
+}
+form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+form input {
+  padding: 0.8rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+form input.error {
+  border: 1px solid red;
+}
+form input:focus {
+  border: 1px solid black;
+}
+form input#description {
+  height: 90px;
+  padding: 10px;
+}
+form label {
+  font-size: 1.2rem;
+  font-weight: 200;
+  position: relative;
+  top: 0.7rem;
+
+  transition: 0.3s;
+}
+form label.error {
+  color: red;
+}
+form button {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 8px 16px;
+  width: fit-content;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: var(--plum-web);
+  box-shadow: 4px 4px 0px var(--tea-green);
+
+  transition: 0.2s;
+}
+form button:hover {
+  background-color: var(--tea-green);
+  box-shadow: 4px 4px 0px var(--plum-web);
+
+  animation-name: shadow;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+form button:active {
+  opacity: 0.7;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 4px 4px 0px var(--plum-web);
+  }
+  10% {
+    box-shadow: 4px 3px 0px var(--plum-web);
+  }
+  30% {
+    box-shadow: 4px 2px 0px var(--plum-web);
+  }
+  50% {
+    box-shadow: 4px 1px 0px var(--plum-web);
+  }
+  70% {
+    box-shadow: 4px 2px 0px var(--plum-web);
+  }
+  90% {
+    box-shadow: 4px 3px 0px var(--plum-web);
+  }
+  to {
+    box-shadow: 4px 4px 0px var(--plum-web);
+  }
+}
