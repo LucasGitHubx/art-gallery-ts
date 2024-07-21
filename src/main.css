@@ -25,4 +25,7 @@
   .container {
     gap: 9rem;
   }
+  header {
+    margin-bottom: 2rem;
+  }
 }
