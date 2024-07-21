@@ -19,7 +19,7 @@ export default function MainLayout() {
               <NavLink to="">GALLERY</NavLink>
             </li>
             <li>
-              <NavLink to="">ADD PHOTO</NavLink>
+              <NavLink to="/art-gallery/add">ADD PHOTO</NavLink>
             </li>
           </ul>
         </nav>
