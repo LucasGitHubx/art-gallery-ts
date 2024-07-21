@@ -1,11 +1,18 @@
 import "./form.css";
 import { useState } from "react";
 
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+
+// Database Actions
+import { addPhoto } from "../firebase/firestore";
+
 export default function Form() {
   const [title, setTitle] = useState<string>("");
   const [author, setAuthor] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [url, setUrl] = useState<string>("");
+  const [posted, setPosted] = useState<boolean>(false);
 
   const [titleError, setTitleError] = useState<boolean>(false);
   const [authorError, setAuthorError] = useState<boolean>(false);
@@ -59,6 +66,18 @@ export default function Form() {
       setAuthor("");
       setDescription("");
       setUrl("");
+
+      addPhoto(
+        {
+          photoID: crypto.randomUUID(),
+          title,
+          author,
+          url,
+          description,
+        },
+        setPosted
+      );
+      toast("Photo uploaded correctly.");
     }
   }
 
@@ -115,6 +134,21 @@ export default function Form() {
         onChange={(e) => setDescription(e.target.value)}
       />
       <button>Add!</button>
+
+      {posted ? (
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      ) : undefined}
     </form>
   );
 }
