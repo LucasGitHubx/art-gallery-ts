@@ -1,0 +1,55 @@
+:root {
+  --tea-green: #def6ca;
+  --pink: #f8bdc4;
+  --plum-web: #f497da;
+  --pink: #f679e5;
+}
+header {
+  padding: 1rem 2px;
+  width: 100%;
+  background-color: var(--tea-green);
+
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+
+  transition: 0.3s;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header img {
+  width: 59px;
+  height: 62px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+@media (min-width: 425px) {
+  header {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+  }
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+  header a {
+    font-weight: 400;
+  }
+  nav ul {
+    gap: 2rem;
+  }
+}
