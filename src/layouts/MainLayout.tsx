@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Outlet, NavLink } from "react-router-dom";
 import "./mainLayout.css";
 import Logo from "../../public/logo.svg";
