@@ -2,7 +2,6 @@ import { app } from "./firebase";
 import { Photo } from "../types";
 import {
   collection,
-  doc,
   getDocs,
   getFirestore,
   addDoc,
