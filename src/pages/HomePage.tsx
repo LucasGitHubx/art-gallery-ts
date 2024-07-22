@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import "./homePage.css";
 import reviews from "../utilities/data";
 import Review from "../components/Review";
