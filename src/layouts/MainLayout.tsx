@@ -7,7 +7,7 @@ export default function MainLayout() {
   return (
     <>
       <header>
-        <NavLink to="">
+        <NavLink to="/art-gallery/ts">
           <img src={Logo} alt="" />
         </NavLink>
         <nav>
@@ -16,10 +16,10 @@ export default function MainLayout() {
               <NavLink to="">CONTACT</NavLink>
             </li>
             <li>
-              <NavLink to="/art-gallery/gallery">GALLERY</NavLink>
+              <NavLink to="/art-gallery-ts/gallery">GALLERY</NavLink>
             </li>
             <li>
-              <NavLink to="/art-gallery/add">ADD PHOTO</NavLink>
+              <NavLink to="/art-gallery-ts/add">ADD PHOTO</NavLink>
             </li>
           </ul>
         </nav>

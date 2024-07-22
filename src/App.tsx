@@ -12,10 +12,10 @@ import GalleryPage from "./pages/GalleryPage";
 export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/art-gallery" element={<MainLayout />}>
+      <Route path="/art-gallery-ts/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/art-gallery/add" element={<AddPhotoPage />} />
-        <Route path="/art-gallery/gallery" element={<GalleryPage />} />
+        <Route path="/art-gallery-ts/add" element={<AddPhotoPage />} />
+        <Route path="/art-gallery-ts/gallery" element={<GalleryPage />} />
       </Route>
     )
   );
