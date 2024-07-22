@@ -1,7 +1,6 @@
-export type PhotoID = `${string}-${string}-${string}-${string}-${string}`;
 
 export interface Photo {
-  photoID: PhotoID;
+  photoID: string;
   title: string;
   author: string;
   url: string;
