@@ -7,7 +7,7 @@ export default function MainLayout() {
   return (
     <>
       <header>
-        <NavLink to="/art-gallery/ts">
+        <NavLink to="">
           <img src={Logo} alt="" />
         </NavLink>
         <nav>
