@@ -7,6 +7,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import AddPhotoPage from "./pages/AddPhotoPage";
+import GalleryPage from "./pages/GalleryPage";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ export default function App() {
       <Route path="/art-gallery" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/art-gallery/add" element={<AddPhotoPage />} />
+        <Route path="/art-gallery/gallery" element={<GalleryPage />} />
       </Route>
     )
   );
